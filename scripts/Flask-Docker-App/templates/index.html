@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis for Vietnamese Reviews</title>
+</head>
+    <body>
+        <h1>Sentiment Analysis for Vietnamese Reviews</h1>
+
+        <form action="" method="post">
+            <label for="review">Enter Review</label><br>
+            <textarea id="review" name="review" rows="5" cols="75"></textarea><br>
+            <input type="submit" value="Submit">
+        </form><br>
+        {% if result %}
+            <p>Predicted Sentiment:</p>
+            <p>{{ result }}</p>
+        {% endif %}
+    </body>
+</html>
